@@ -1,0 +1,182 @@
+@include media-breakpoint-up(lg) {
+  .head {
+    height:880px;
+    padding-left: 45px;
+    padding-right: 35px;
+    background: url("/src/images/main-fon.png") no-repeat fixed;
+    background-size: 100%;
+    margin: 0;
+  }
+  .head__contacts {
+    height: 110px;
+    padding-top: 27px;
+  }
+  .head__title {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .head__text_number {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .head__text_consuktation {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 10px;
+  }
+  .head__numbers {
+    height: 64px;
+    position: relative;
+    top: -27px;
+  }
+  .head__numbers a {
+    font-size: 17px;
+    line-height: 21px;
+  }
+  .main__title {
+    margin-top: 16%;
+    margin-left: 50%;
+    text-align: left;
+    font-size: 42px;
+    line-height: 111.2%;
+  }
+  .main__subtitle {
+    height: 100px;
+    //padding-right: 375px;
+    margin-top: 40px;
+    margin-left: 50%;
+    text-align: left;
+    font-size: 20px;
+    line-height: 149.7%;
+  }
+  .main__number {
+    width: 521px;
+    height: 80px;
+    margin-top: 25px;
+    margin-left: 51%;
+  }
+  .main__nav {
+    margin-top: 8%;
+  }
+  .main__link {
+    width: 50%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 111.2%;
+    color: #1B1B1B;
+  }
+  .main__link a {
+    margin-left: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: #1B1B1B;
+  }
+  .about {
+    width: 1180px;
+    margin: auto;
+    height: 365px;
+    padding: 0;
+  }
+  .about__title {
+    position: relative;
+    height: 152px;
+    font-size: 30px;
+    line-height: 105.2%;
+  }
+  .about__title:before {
+    content: '';
+    position: absolute;
+    width: 116px;
+    height: 8px;
+    top: 40px;
+    background: url("/src/images/about-line-desk.png") no-repeat center;
+  }
+  .about__subtitle {
+    height: 195px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .cards {
+    width: 1180px;
+    margin: auto;
+    height: 455px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    background-size: 100%;
+  }
+  .cards__back {
+    background: url("/src/images/cards-fon.png") no-repeat;
+    background-size: 100%;
+  }
+  .cards__title {
+    height: 132px;
+    position: relative;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 105.2%;
+    letter-spacing: 0.07em;
+    color: #1B1B1B;
+  }
+  .cards__title:before {
+    content: '';
+    position: absolute;
+    width: 118px;
+    height: 8px;
+    top: 100px;
+    background: #ffffff;
+  }
+  .cards__block-inf {
+    min-width: 1180px;
+    max-width: 1500px;
+    height: 205px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+  }
+  .contacts {
+    width: 1180px;
+    margin: auto;
+    padding-top: 100px;
+    height: 812px;
+  }
+  .contacts__title {
+    padding: 0 45px 0 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 32px;
+    /* or 26px */
+    letter-spacing: 0.07em;
+  }
+  .contacts__title:before {
+    content: '';
+    position: absolute;
+    width: 199px;
+    height: 6px;
+    top: 45px;
+    background: url("/src/images/contact-line-desk.png") no-repeat center;
+  }
+  .contacts__numbers {
+    padding: 0 45px 0 45px;
+    height: 129px;
+    margin: 0;
+  }
+  .contacts__link:nth-child(3) {
+    margin-bottom: 18px;
+  }
+  .contacts__link:nth-child(4) {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .contacts__link {
+    height: 30px;
+  }
+  .footer__text {
+    width: 1180px;
+    margin: auto;
+  }
+}

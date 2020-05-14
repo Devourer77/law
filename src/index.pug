@@ -1,0 +1,112 @@
+doctype html
+html
+  head
+    meta(charset="utf-8" name="viewport" content="width=device-width initial-scale=1")
+    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    meta(name="google-site-verification" content="4DdwMzWhwFuEVp6krX3UFtRu-APttr4yXP5ITTXywuI")
+    title Общество защиты прав потребителей
+    meta(name='description' content='Обеспечим защиту ваших прав и законных интересов. Подготовим иск и проведём экспертизу в краткие сроки')
+    meta(name='keywords' content='защита, прав, потребителей, общество, законных, интересов, экспертиза, провести, аппеляция')
+  body
+    header.head.row.w-100.align-content-between.align-content-md-start.m-0
+      div.head__contacts.col-12.row.no-gutters
+        div.head__title.col-12.col-md-5.col-lg-7
+          |Общественное объединение по защите прав потребителей
+          br
+          span &#160;“Правовое решение”
+        div.numbers.col-12.row.no-gutters.col-md-7.col-lg-5
+          div.head__text_number.col-12.d-flex.justify-content-center.col-md-7.justify-content-md-end.justify-content-lg-end
+            |Телефоны
+            span &#160;горячей линии
+          div.head__text_consuktation.col-12.d-flex.justify-content-center.col-md-7.justify-content-md-end.justify-content-lg-end
+            |Консультации оказываются бесплатно
+          div.head__numbers.col-12.d-flex.flex-column.align-items-center.justify-content-between.col-md-5.col-lg-5
+            a(href='tel:+375299686095')
+              |+375 29 968 60 95
+            a(href='tel:+375299686095')
+              | +375 29 968 60 95
+            a(href='tel:+375299686095')
+              | +375 29 968 60 95
+      h1.main__title.col-12.justify-content-center.d-flex.align-items-center.col-md-6.justify-content-md-start
+        |Защита прав потребителей
+      h2.main__subtitle.col-12.justify-content-center.col-md-7.col-lg-5
+        |Наша цель - обеспечение прав
+        |и законных интересов потребителей
+        |товаров( работ, услуг)
+      div.main__number.d-none.d-lg-flex.flex-wrap.flex-row
+        mixin main_icon(main_icon,main_link, main_text)
+          div.d-flex.align-items-center.main__link
+            div(style="background-image: url(" + (main_icon) + ")").contacts__numbers_icon
+            a(href=(main_link))
+              | #{main_text}
+        +main_icon('src/images/icon-mts.png','tel:+375299686095','+375 29 968 60 95')
+        +main_icon('src/images/icon-a1.png','tel:+375299686095','+375 29 968 60 95')
+        +main_icon('src/images/icon-life.png','tel:+375299686095','+375 29 968 60 95')
+        +main_icon('src/images/icon-telephone.png','tel:+375299686095','+375 29 968 60 95')
+      a(href='#contacts').main__nav.col-12.d-flex.justify-content-center Контакты
+    section.about.row.align-content-lg-center
+      h3.about__title.d-flex.col-12.justify-content-left.align-items-center.mb-0.col-lg-3.align-items-lg-baseline
+        |О нас
+      div.about__subtitle.d-flex.col-12.row.no-gutters.col-lg-9
+        div.col-12
+          |Высококвалифицированные, аттестованные юристы с более
+          |чем двадцатилетним опытом работы окажут
+          |Вам необходимую помощь в разрешении Вашего спорного вопроса.
+        div.col-12
+          |Если Вы считаете, что Ваши права нарушены, позвоните нам и мы разберем
+          |Ваш вопрос и подскажем оптимально-правильное решение именно в Вашей ситуации.
+    section.cards__back
+      section.cards.row.justify-content-center
+        h3.cards__title.d-flex.col-12.justify-content-left.align-items-center
+          |Услуги
+        div.cards__block-inf.d-flex.flex-column.align-items-center.justify-content-around.flex-md-wrap.flex-md-row.justify-content-lg-between
+          mixin card(icon, text)
+            div.d-flex.cards__block.flex-column.align-items-center.justify-content-around
+              img(src=(icon))
+              div.cards__block_text
+                |#{text}
+          +card('/src/images/education.png', 'Консультация потребителей')
+          +card('/src/images/paper.png', 'Изучение документов, подготовка претензий')
+          +card('/src/images/bank.png', 'Подготовка исков и представление Ваших интересов в судах')
+          +card('/src/images/libra.png', 'Апелляционное производство')
+          +card('/src/images/box.png', 'Экспертиза товаров (работ, услуг)')
+    section.contacts.row.align-conetent-start.align-content-md-between
+      a(name='contacts')
+      h3.contacts__title.d-flex.col-12.justify-content-left.mb-0.align-items-end.col-md-12.col-lg-4.align-items-lg-start
+        |Контакты
+      div.contacts__numbers.d-flex.flex-column.justify-content-between.flex-md-wrap.col-lg-8.col-md-12
+        mixin contact(con_icon,link, con_text)
+          div.d-flex.align-items-center.contacts__link
+            div(style="background-image: url(" + (con_icon) +")").contacts__numbers_icon
+            a(href=(link)).contacts__numbers_text
+              |#{con_text}
+        +contact('src/images/icon-geoteg.png','#','Г. Минск, ул.Сухаревская 16, Каб. 112')
+        +contact('src/images/icon-clock.png','#','Пн-Пт 9:00-18:00')
+        +contact('src/images/icon-mail.png','#','mailgmailmail@')
+        +contact('src/images/icon-mts.png','tel:+375299686095','+375 29 968 60 95')
+        +contact('src/images/icon-a1.png','tel:+375299686095','+375 29 968 60 95')
+        +contact('src/images/icon-life.png','tel:+375299686095','+375 29 968 60 95')
+        +contact('src/images/icon-telephone.png','tel:+375299686095','+375 29 968 60 95')
+      iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4703.504983781715!2d27.43375363052887!3d53.882828030029934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbdae8d58d99a1%3A0xc6fa22c59312235!2z0YPQuy4g0KHRg9GF0LDRgNC10LLRgdC60LDRjw!5e0!3m2!1sru!2sby!4v1588867675944!5m2!1sru!2sby" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0").maps.col-12
+    footer.footer.d-flex.align-items-center
+      div.footer__text
+        |Общественное об'единение по защите прав потребителей " Правовое решение", УНП 692010506, ОКПО 504076816000
+    // Yandex.Metrika counter
+    script(type='text/javascript').
+      (function (m, e, t, r, i, k, a) {
+        m[i] = m[i] || function () {
+          (m[i].a = m[i].a || []).push(arguments)
+        };
+        m[i].l = 1 * new Date();
+        k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+      })
+      (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+      ym(62743702, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true
+      });
+    noscript
+      div
+        img(src='https://mc.yandex.ru/watch/62743702', style='position:absolute; left:-9999px;', alt='')
+    // /Yandex.Metrika counter

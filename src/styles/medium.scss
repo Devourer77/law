@@ -1,0 +1,164 @@
+@include media-breakpoint-up(md) {
+
+  .head {
+    height: 569px;
+    padding-left: 45px;
+    padding-right: 35px;
+    background: url("/src/images/main-fon-tablet.png") fixed;
+    background-size: 100%;
+  }
+  .head__contacts {
+    height: 74px;
+    padding-top: 10px;
+  }
+  .head__title {
+    font-size: 12px;
+    line-height: 19px;
+    text-align: left;
+  }
+  .head__title br {
+    display: none;
+  }
+  .head__text_number {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .head__text_consuktation {
+    font-size: 10px;
+    line-height: 12px;
+    margin-top: 10px;
+  }
+  .head__numbers {
+    height: 64px;
+    position: relative;
+    top: -17px;
+  }
+  .head__numbers a {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .main__title {
+    margin-top: 16%;
+    margin-left: 50%;
+    text-align: left;
+    font-size: 30px;
+    line-height: 111.2%;
+  }
+  .main__subtitle {
+    margin-top: 5%;
+    margin-left: 50%;
+    text-align: left;
+  }
+  .main__nav {
+    margin-top: 67px;
+  }
+  .about {
+    height: 387px;
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+  .about__title {
+    position: relative;
+    height: 152px;
+    font-size: 25px;
+    line-height: 105.2%;
+  }
+  .about__title:before {
+    content: '';
+    position: absolute;
+    width: 93px;
+    height: 8px;
+    top: 100px;
+    background: url("/src/images/about-line.png") no-repeat center;
+  }
+  .about__subtitle {
+    height: 210px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 30px
+  }
+  .cards {
+    height: 859px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 0;
+    background-size: 100%;
+  }
+  .cards__back {
+    background: url("/src/images/cards-fon.png") no-repeat;
+    background-size: 100%;
+  }
+  .cards__title {
+    height: 132px;
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 105.2%;
+    letter-spacing: 0.07em;
+
+    color: #1B1B1B;
+  }
+  .cards__title:before {
+    content: '';
+    position: absolute;
+    width: 118px;
+    height: 8px;
+    top: 100px;
+    background: #ffffff;
+  }
+  .cards__block-inf {
+    height: 727px;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 50px;
+    margin: 0;
+  }
+  .contacts {
+    height: 790px;
+  }
+  .contacts__title {
+    padding: 0 45px 0 45px;
+    //font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 105.2%;
+    /* or 26px */
+    letter-spacing: 0.07em;
+  }
+  .contacts__title:before {
+    content: '';
+    position: absolute;
+    width: 116px;
+    height: 6px;
+    top: 80px;
+    background: url("/src/images/contact-line.png") no-repeat center;
+  }
+  .contacts__numbers {
+    padding: 0 45px 0 45px;
+    height: 129px;
+    margin: 0;
+  }
+  .contacts__numbers_text {
+    font-size: 16px;
+  }
+  .contacts__link:nth-child(3) {
+    margin-bottom: 18px;
+  }
+  .contacts__link {
+    height: 30px;
+  }
+  .maps {
+    width: 100%;
+    height: 450px;
+  }
+  .footer {
+    font-size: 14px;
+    padding: 28px 45px;
+  }
+  .footer__text {
+    width: 448px;
+    height: 34px;
+  }
+}
