@@ -1,6 +1,6 @@
-import html from "./index.pug"
+import "./index.pug"
 // Import styles
-import style from "./styles/main.sass";
+import "./styles/main.sass";
 // Import scripts
-import script from "./scripts/plugin.js";
+import "./scripts/plugin.js";
 import './images'
